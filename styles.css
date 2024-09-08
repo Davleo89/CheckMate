@@ -5,22 +5,23 @@ body {
     align-items: center;
     min-height: 100vh;
     background-image: url('img/438463.png');
-    background-size: cover; /* Hace que la imagen cubra toda el área */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: #fff; /* Texto blanco para contrastar mejor */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
     margin: 0;
 }
 
 .app-container {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para más profundidad */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    position: relative; /* Añadido para usar positioning en el botón */
 }
 
 h1 {
@@ -29,11 +30,11 @@ h1 {
 }
 
 .task-section {
-    background-color: rgba(255, 255, 255, 0.2); /* Secciones translúcidas */
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    color: #fff; /* Texto blanco */
+    color: #fff;
 }
 
 h2 {
@@ -45,7 +46,7 @@ input, button {
     margin: 5px 0;
     width: 100%;
     box-sizing: border-box;
-    color: #000; /* Texto de los inputs en negro */
+    color: #000;
 }
 
 ul {
@@ -55,17 +56,17 @@ ul {
 
 li {
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* Tareas translúcidas */
+    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid #ddd;
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
-    color: #fff; /* Texto de las tareas en blanco */
+    color: #fff;
 }
 
 li.completed {
     text-decoration: line-through;
-    color: #ccc; /* Color gris claro para tareas completadas */
+    color: #ccc;
 }
 
 button {
@@ -86,38 +87,46 @@ button.move {
 }
 
 .save-button {
-	box-shadow:inset 0px 1px 0px 0px #f29c93;
-	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-	background-color:#fe1a00;
-	border-radius:6px;
-	border:1px solid #d83526;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:9px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
-}
-.save-button:hover {
-	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-	background-color:#ce0100;
-}
-.save-button:active {
-	position:relative;
-	top:1px;
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color: #fe1a00;
+    border-radius: 6px;
+    border: 1px solid #d83526;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 7px; /* Reducido el tamaño de la fuente */
+    font-weight: bold;
+    padding: 4px 12px; /* Reducido el padding */
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+    position: absolute; /* Posiciona el botón dentro del contenedor */
+    right: 20px; /* Ajusta el espaciado desde el borde derecho */
+    bottom: 20px; /* Ajusta el espaciado desde el borde inferior */
 }
 
+.save-button:hover {
+    background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+    background-color: #ce0100;
+}
+
+.save-button:active {
+    position: relative;
+    top: 1px;
+}
 
 /* Responsive: A partir de 768px los cuadros estarán uno debajo del otro */
 @media (max-width: 768px) {
     .app-container {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
     }
 
     h1 {
         grid-column: span 1;
+    }
+
+    .save-button {
+        position: static; /* Cambia la posición del botón en pantallas pequeñas */
+        margin-top: 20px; /* Añade espacio superior para separación */
     }
 }

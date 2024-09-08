@@ -12,7 +12,7 @@
 
 ## Capturas de pantalla
 
-_Aquí puedes agregar capturas de pantalla de la aplicación en funcionamiento._
+
 
 ## Tecnologías utilizadas
 
