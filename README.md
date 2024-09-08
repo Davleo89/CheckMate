@@ -24,6 +24,8 @@
 
 Este proyecto no requiere la instalación de dependencias externas. Solo necesitas un navegador moderno para ejecutarlo.
 
+Puedes ver el proyecto en https://checkmateda.netlify.app/
+
 ### Pasos
 
 1. Clona este repositorio o descarga el proyecto en tu máquina local:
