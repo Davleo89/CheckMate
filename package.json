@@ -1,0 +1,19 @@
+{
+  "name": "checkmate",
+  "version": "1.0.0",
+  "description": "Es una aplicación simple de gestión de tareas que permite organizar las tareas en tres categorías: **Por Hacer**, **En Curso** y **Realizadas**. Las tareas se pueden mover entre estas categorías según su estado de progreso, y la aplicación guarda la información en el navegador utilizando LocalStorage para asegurar que las tareas se mantengan incluso después de recargar la página.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davleo89/CheckMate.git"
+  },
+  "author": "Davleo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davleo89/CheckMate/issues"
+  },
+  "homepage": "https://github.com/Davleo89/CheckMate#readme"
+}

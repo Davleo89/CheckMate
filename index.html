@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckMate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Gestión de Tareas</h1>
+    
+        <div class="task-section">
+            <h2>Tareas por Hacer</h2>
+            <input type="text" id="new-task" placeholder="Agregar nueva tarea">
+            <button onclick="addTask()">Agregar</button>
+            <ul id="pending-tasks"></ul>
+        </div>
+    
+        <div class="task-section">
+            <h2>Tareas en Curso</h2>
+            <ul id="in-progress-tasks"></ul>
+        </div>
+    
+        <div class="task-section">
+            <h2>Tareas Realizadas</h2>
+            <ul id="completed-tasks"></ul>
+        </div>
+
+        <button class="save-button" id="save-button" disabled>Guardar</button>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

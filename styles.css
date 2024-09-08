@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('img/438463.png');
+    background-size: cover; /* Hace que la imagen cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff; /* Texto blanco para contrastar mejor */
+    margin: 0;
+}
+
+.app-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para más profundidad */
+    border-radius: 10px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    gap: 20px;
+}
+
+h1 {
+    grid-column: span 3;
+    text-align: center;
+}
+
+.task-section {
+    background-color: rgba(255, 255, 255, 0.2); /* Secciones translúcidas */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #fff; /* Texto blanco */
+}
+
+h2 {
+    text-align: center;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: #000; /* Texto de los inputs en negro */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Tareas translúcidas */
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff; /* Texto de las tareas en blanco */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #ccc; /* Color gris claro para tareas completadas */
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.delete {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+button.move {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+}
+
+.save-button {
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:9px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.save-button:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+}
+.save-button:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* Responsive: A partir de 768px los cuadros estarán uno debajo del otro */
+@media (max-width: 768px) {
+    .app-container {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    h1 {
+        grid-column: span 1;
+    }
+}
