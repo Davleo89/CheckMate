@@ -35,7 +35,7 @@ Este proyecto no requiere la instalación de dependencias externas. Solo necesit
 2. Navega a la carpeta del proyecto:
 
     ```bash
-    cd taskflow
+    cd CheckMate
     ```
 
 3. Abre el archivo `index.html` en tu navegador favorito.
